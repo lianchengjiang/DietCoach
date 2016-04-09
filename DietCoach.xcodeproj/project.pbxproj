@@ -10,6 +10,8 @@
 		7506D23B1CB416EA009CD911 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7506D23A1CB416EA009CD911 /* HomeViewController.m */; };
 		7506D2421CB4174A009CD911 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7506D2401CB4174A009CD911 /* HomeTableViewCell.m */; };
 		7506D2431CB4174A009CD911 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7506D2411CB4174A009CD911 /* HomeTableViewCell.xib */; };
+		75574AA71CB6B43600FF4630 /* UIColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 75574AA61CB6B43600FF4630 /* UIColorPicker.m */; };
+		75574AAF1CB6BA2400FF4630 /* UIColor+HexValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 75574AAE1CB6BA2400FF4630 /* UIColor+HexValue.m */; };
 		75903BEE1CB415BE0070330D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75903BED1CB415BE0070330D /* main.m */; };
 		75903BF11CB415BE0070330D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75903BF01CB415BE0070330D /* AppDelegate.m */; };
 		75903BF71CB415BE0070330D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75903BF51CB415BE0070330D /* Main.storyboard */; };
@@ -24,6 +26,10 @@
 		7506D23F1CB4174A009CD911 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
 		7506D2401CB4174A009CD911 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		7506D2411CB4174A009CD911 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		75574AA51CB6B43600FF4630 /* UIColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorPicker.h; sourceTree = "<group>"; };
+		75574AA61CB6B43600FF4630 /* UIColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorPicker.m; sourceTree = "<group>"; };
+		75574AAD1CB6BA2400FF4630 /* UIColor+HexValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexValue.h"; sourceTree = "<group>"; };
+		75574AAE1CB6BA2400FF4630 /* UIColor+HexValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexValue.m"; sourceTree = "<group>"; };
 		75903BE91CB415BE0070330D /* DietCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DietCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75903BED1CB415BE0070330D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75903BEF1CB415BE0070330D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +67,8 @@
 		7506D2361CB416D4009CD911 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				75574AA51CB6B43600FF4630 /* UIColorPicker.h */,
+				75574AA61CB6B43600FF4630 /* UIColorPicker.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -84,9 +92,27 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		75574AA81CB6B62700FF4630 /* LCFoundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LCFoundation;
+			sourceTree = "<group>";
+		};
+		75574AA91CB6B62700FF4630 /* LCUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				75574AAD1CB6BA2400FF4630 /* UIColor+HexValue.h */,
+				75574AAE1CB6BA2400FF4630 /* UIColor+HexValue.m */,
+			);
+			path = LCUIKit;
+			sourceTree = "<group>";
+		};
 		75903BE01CB415BE0070330D = {
 			isa = PBXGroup;
 			children = (
+				75574AA81CB6B62700FF4630 /* LCFoundation */,
+				75574AA91CB6B62700FF4630 /* LCUIKit */,
 				75903BEB1CB415BE0070330D /* DietCoach */,
 				75903BEA1CB415BE0070330D /* Products */,
 				4C69F36C3108AF9B363C1E85 /* Pods */,
@@ -257,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75574AA71CB6B43600FF4630 /* UIColorPicker.m in Sources */,
 				75903BF11CB415BE0070330D /* AppDelegate.m in Sources */,
 				75903BEE1CB415BE0070330D /* main.m in Sources */,
+				75574AAF1CB6BA2400FF4630 /* UIColor+HexValue.m in Sources */,
 				7506D2421CB4174A009CD911 /* HomeTableViewCell.m in Sources */,
 				7506D23B1CB416EA009CD911 /* HomeViewController.m in Sources */,
 			);
