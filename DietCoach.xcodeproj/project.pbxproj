@@ -12,6 +12,10 @@
 		7506D2431CB4174A009CD911 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7506D2411CB4174A009CD911 /* HomeTableViewCell.xib */; };
 		75574AA71CB6B43600FF4630 /* UIColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 75574AA61CB6B43600FF4630 /* UIColorPicker.m */; };
 		75574AAF1CB6BA2400FF4630 /* UIColor+HexValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 75574AAE1CB6BA2400FF4630 /* UIColor+HexValue.m */; };
+		756B72181CB8F29500269EE8 /* MaterialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 756B72171CB8F29500269EE8 /* MaterialController.m */; };
+		756B721B1CB8F31300269EE8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756B721A1CB8F31300269EE8 /* AVFoundation.framework */; };
+		756B721E1CB8F4B600269EE8 /* LCPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 756B721D1CB8F4B600269EE8 /* LCPlayerView.m */; };
+		756B72211CB8F5DF00269EE8 /* LCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 756B72201CB8F5DF00269EE8 /* LCPlayer.m */; };
 		75903BEE1CB415BE0070330D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75903BED1CB415BE0070330D /* main.m */; };
 		75903BF11CB415BE0070330D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75903BF01CB415BE0070330D /* AppDelegate.m */; };
 		75903BF71CB415BE0070330D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75903BF51CB415BE0070330D /* Main.storyboard */; };
@@ -30,6 +34,13 @@
 		75574AA61CB6B43600FF4630 /* UIColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorPicker.m; sourceTree = "<group>"; };
 		75574AAD1CB6BA2400FF4630 /* UIColor+HexValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexValue.h"; sourceTree = "<group>"; };
 		75574AAE1CB6BA2400FF4630 /* UIColor+HexValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexValue.m"; sourceTree = "<group>"; };
+		756B72161CB8F29500269EE8 /* MaterialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialController.h; sourceTree = "<group>"; };
+		756B72171CB8F29500269EE8 /* MaterialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialController.m; sourceTree = "<group>"; };
+		756B721A1CB8F31300269EE8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		756B721C1CB8F4B600269EE8 /* LCPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPlayerView.h; sourceTree = "<group>"; };
+		756B721D1CB8F4B600269EE8 /* LCPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPlayerView.m; sourceTree = "<group>"; };
+		756B721F1CB8F5DF00269EE8 /* LCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPlayer.h; sourceTree = "<group>"; };
+		756B72201CB8F5DF00269EE8 /* LCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPlayer.m; sourceTree = "<group>"; };
 		75903BE91CB415BE0070330D /* DietCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DietCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75903BED1CB415BE0070330D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75903BEF1CB415BE0070330D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756B721B1CB8F31300269EE8 /* AVFoundation.framework in Frameworks */,
 				9917EFF21B669AAE5C265019 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +100,8 @@
 			children = (
 				7506D2391CB416EA009CD911 /* HomeViewController.h */,
 				7506D23A1CB416EA009CD911 /* HomeViewController.m */,
+				756B72161CB8F29500269EE8 /* MaterialController.h */,
+				756B72171CB8F29500269EE8 /* MaterialController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -106,6 +120,17 @@
 				75574AAE1CB6BA2400FF4630 /* UIColor+HexValue.m */,
 			);
 			path = LCUIKit;
+			sourceTree = "<group>";
+		};
+		756B72191CB8F2CF00269EE8 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				756B721C1CB8F4B600269EE8 /* LCPlayerView.h */,
+				756B721D1CB8F4B600269EE8 /* LCPlayerView.m */,
+				756B721F1CB8F5DF00269EE8 /* LCPlayer.h */,
+				756B72201CB8F5DF00269EE8 /* LCPlayer.m */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 		75903BE01CB415BE0070330D = {
@@ -133,6 +158,7 @@
 			children = (
 				75903BEF1CB415BE0070330D /* AppDelegate.h */,
 				75903BF01CB415BE0070330D /* AppDelegate.m */,
+				756B72191CB8F2CF00269EE8 /* Player */,
 				7506D2361CB416D4009CD911 /* Model */,
 				7506D2371CB416D4009CD911 /* View */,
 				7506D2381CB416D4009CD911 /* ViewController */,
@@ -156,6 +182,7 @@
 		FC34FE29935E957CCDBE4397 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				756B721A1CB8F31300269EE8 /* AVFoundation.framework */,
 				F2A4E4567B72B083529A1C71 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -283,10 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756B721E1CB8F4B600269EE8 /* LCPlayerView.m in Sources */,
+				756B72211CB8F5DF00269EE8 /* LCPlayer.m in Sources */,
 				75574AA71CB6B43600FF4630 /* UIColorPicker.m in Sources */,
 				75903BF11CB415BE0070330D /* AppDelegate.m in Sources */,
 				75903BEE1CB415BE0070330D /* main.m in Sources */,
 				75574AAF1CB6BA2400FF4630 /* UIColor+HexValue.m in Sources */,
+				756B72181CB8F29500269EE8 /* MaterialController.m in Sources */,
 				7506D2421CB4174A009CD911 /* HomeTableViewCell.m in Sources */,
 				7506D23B1CB416EA009CD911 /* HomeViewController.m in Sources */,
 			);
