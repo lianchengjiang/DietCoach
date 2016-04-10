@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7506D23B1CB416EA009CD911 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7506D23A1CB416EA009CD911 /* HomeViewController.m */; };
-		7506D2421CB4174A009CD911 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7506D2401CB4174A009CD911 /* HomeTableViewCell.m */; };
-		7506D2431CB4174A009CD911 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7506D2411CB4174A009CD911 /* HomeTableViewCell.xib */; };
-		75574AA71CB6B43600FF4630 /* UIColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 75574AA61CB6B43600FF4630 /* UIColorPicker.m */; };
-		75574AAF1CB6BA2400FF4630 /* UIColor+HexValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 75574AAE1CB6BA2400FF4630 /* UIColor+HexValue.m */; };
 		756B72181CB8F29500269EE8 /* MaterialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 756B72171CB8F29500269EE8 /* MaterialController.m */; };
 		756B721B1CB8F31300269EE8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756B721A1CB8F31300269EE8 /* AVFoundation.framework */; };
 		756B721E1CB8F4B600269EE8 /* LCPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 756B721D1CB8F4B600269EE8 /* LCPlayerView.m */; };
@@ -21,19 +17,43 @@
 		75903BF71CB415BE0070330D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75903BF51CB415BE0070330D /* Main.storyboard */; };
 		75903BF91CB415BE0070330D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75903BF81CB415BE0070330D /* Assets.xcassets */; };
 		75903BFC1CB415BE0070330D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75903BFA1CB415BE0070330D /* LaunchScreen.storyboard */; };
+		75CCF7671CBA069D00A8F349 /* GreenBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7661CBA069D00A8F349 /* GreenBottomBar.m */; };
+		75CCF77A1CBA0BF400A8F349 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7771CBA0BF400A8F349 /* NSArray+Safe.m */; };
+		75CCF77B1CBA0BF400A8F349 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7791CBA0BF400A8F349 /* NSMutableArray+Safe.m */; };
+		75CCF7911CBA136700A8F349 /* cook1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 75CCF7891CBA136700A8F349 /* cook1.mov */; };
+		75CCF7921CBA136700A8F349 /* cook2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 75CCF78A1CBA136700A8F349 /* cook2.mov */; };
+		75CCF7931CBA136700A8F349 /* cook3.mov in Resources */ = {isa = PBXBuildFile; fileRef = 75CCF78B1CBA136700A8F349 /* cook3.mov */; };
+		75CCF7941CBA136700A8F349 /* cook4.mov in Resources */ = {isa = PBXBuildFile; fileRef = 75CCF78C1CBA136700A8F349 /* cook4.mov */; };
+		75CCF7951CBA136700A8F349 /* cook5.mov in Resources */ = {isa = PBXBuildFile; fileRef = 75CCF78D1CBA136700A8F349 /* cook5.mov */; };
+		75CCF7961CBA136700A8F349 /* cook6.mov in Resources */ = {isa = PBXBuildFile; fileRef = 75CCF78E1CBA136700A8F349 /* cook6.mov */; };
+		75CCF7971CBA136700A8F349 /* meterial.mov in Resources */ = {isa = PBXBuildFile; fileRef = 75CCF78F1CBA136700A8F349 /* meterial.mov */; };
+		75CCF7981CBA136700A8F349 /* prepare.mov in Resources */ = {isa = PBXBuildFile; fileRef = 75CCF7901CBA136700A8F349 /* prepare.mov */; };
+		75CCF7AB1CBA148000A8F349 /* BDReusableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF79B1CBA148000A8F349 /* BDReusableViewModel.m */; };
+		75CCF7AC1CBA148000A8F349 /* BaseModelDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF79E1CBA148000A8F349 /* BaseModelDataSource.m */; };
+		75CCF7AD1CBA148000A8F349 /* ModelCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7A01CBA148000A8F349 /* ModelCollectionViewDataSource.m */; };
+		75CCF7AE1CBA148000A8F349 /* ModelTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7A21CBA148000A8F349 /* ModelTableViewDataSource.m */; };
+		75CCF7AF1CBA148000A8F349 /* ReusableFooterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7A41CBA148000A8F349 /* ReusableFooterModel.m */; };
+		75CCF7B01CBA148000A8F349 /* ReusableHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7A61CBA148000A8F349 /* ReusableHeaderModel.m */; };
+		75CCF7B11CBA148000A8F349 /* SupplementaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7A81CBA148000A8F349 /* SupplementaryModel.m */; };
+		75CCF7B21CBA148000A8F349 /* UIColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7AA1CBA148000A8F349 /* UIColorPicker.m */; };
+		75CCF7B61CBA14AB00A8F349 /* MateriaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7B51CBA14AB00A8F349 /* MateriaModel.m */; };
+		75CCF7BB1CBA163000A8F349 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7B91CBA163000A8F349 /* HomeTableViewCell.m */; };
+		75CCF7BC1CBA163000A8F349 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75CCF7BA1CBA163000A8F349 /* HomeTableViewCell.xib */; };
+		75CCF7C61CBA168200A8F349 /* MaterialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7C41CBA168200A8F349 /* MaterialTableViewCell.m */; };
+		75CCF7C71CBA168200A8F349 /* MaterialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75CCF7C51CBA168200A8F349 /* MaterialTableViewCell.xib */; };
+		75CCF7CA1CBA3E7100A8F349 /* ManualVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7C91CBA3E7100A8F349 /* ManualVideoViewController.m */; };
+		75CCF7D11CBA3F7400A8F349 /* ManualVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7CF1CBA3F7400A8F349 /* ManualVideoTableViewCell.m */; };
+		75CCF7D21CBA3F7400A8F349 /* ManualVideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75CCF7D01CBA3F7400A8F349 /* ManualVideoTableViewCell.xib */; };
+		75CCF7D51CBA470E00A8F349 /* AutoVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7D41CBA470E00A8F349 /* AutoVideoViewController.m */; };
+		75CCF7DC1CBA732900A8F349 /* AutoVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7DA1CBA732900A8F349 /* AutoVideoTableViewCell.m */; };
+		75CCF7DD1CBA732900A8F349 /* AutoVideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75CCF7DB1CBA732900A8F349 /* AutoVideoTableViewCell.xib */; };
+		75CCF7E31CBA782500A8F349 /* LCPlayControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7E21CBA782500A8F349 /* LCPlayControlView.m */; };
 		9917EFF21B669AAE5C265019 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A4E4567B72B083529A1C71 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7506D2391CB416EA009CD911 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		7506D23A1CB416EA009CD911 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		7506D23F1CB4174A009CD911 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
-		7506D2401CB4174A009CD911 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
-		7506D2411CB4174A009CD911 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
-		75574AA51CB6B43600FF4630 /* UIColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorPicker.h; sourceTree = "<group>"; };
-		75574AA61CB6B43600FF4630 /* UIColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorPicker.m; sourceTree = "<group>"; };
-		75574AAD1CB6BA2400FF4630 /* UIColor+HexValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexValue.h"; sourceTree = "<group>"; };
-		75574AAE1CB6BA2400FF4630 /* UIColor+HexValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexValue.m"; sourceTree = "<group>"; };
 		756B72161CB8F29500269EE8 /* MaterialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialController.h; sourceTree = "<group>"; };
 		756B72171CB8F29500269EE8 /* MaterialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialController.m; sourceTree = "<group>"; };
 		756B721A1CB8F31300269EE8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -49,6 +69,59 @@
 		75903BF81CB415BE0070330D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75903BFB1CB415BE0070330D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75903BFD1CB415BE0070330D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75CCF7651CBA069D00A8F349 /* GreenBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenBottomBar.h; sourceTree = "<group>"; };
+		75CCF7661CBA069D00A8F349 /* GreenBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenBottomBar.m; sourceTree = "<group>"; };
+		75CCF7761CBA0BF400A8F349 /* NSArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		75CCF7771CBA0BF400A8F349 /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
+		75CCF7781CBA0BF400A8F349 /* NSMutableArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Safe.h"; sourceTree = "<group>"; };
+		75CCF7791CBA0BF400A8F349 /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
+		75CCF77C1CBA0C1C00A8F349 /* LCFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCFoundation.h; sourceTree = "<group>"; };
+		75CCF77D1CBA0C7B00A8F349 /* ehm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ehm.h; sourceTree = "<group>"; };
+		75CCF77E1CBA0E2600A8F349 /* LCCommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCommonMacro.h; sourceTree = "<group>"; };
+		75CCF7891CBA136700A8F349 /* cook1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = cook1.mov; sourceTree = "<group>"; };
+		75CCF78A1CBA136700A8F349 /* cook2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = cook2.mov; sourceTree = "<group>"; };
+		75CCF78B1CBA136700A8F349 /* cook3.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = cook3.mov; sourceTree = "<group>"; };
+		75CCF78C1CBA136700A8F349 /* cook4.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = cook4.mov; sourceTree = "<group>"; };
+		75CCF78D1CBA136700A8F349 /* cook5.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = cook5.mov; sourceTree = "<group>"; };
+		75CCF78E1CBA136700A8F349 /* cook6.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = cook6.mov; sourceTree = "<group>"; };
+		75CCF78F1CBA136700A8F349 /* meterial.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = meterial.mov; sourceTree = "<group>"; };
+		75CCF7901CBA136700A8F349 /* prepare.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = prepare.mov; sourceTree = "<group>"; };
+		75CCF79A1CBA148000A8F349 /* BDReusableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDReusableViewModel.h; sourceTree = "<group>"; };
+		75CCF79B1CBA148000A8F349 /* BDReusableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDReusableViewModel.m; sourceTree = "<group>"; };
+		75CCF79D1CBA148000A8F349 /* BaseModelDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModelDataSource.h; sourceTree = "<group>"; };
+		75CCF79E1CBA148000A8F349 /* BaseModelDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModelDataSource.m; sourceTree = "<group>"; };
+		75CCF79F1CBA148000A8F349 /* ModelCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelCollectionViewDataSource.h; sourceTree = "<group>"; };
+		75CCF7A01CBA148000A8F349 /* ModelCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelCollectionViewDataSource.m; sourceTree = "<group>"; };
+		75CCF7A11CBA148000A8F349 /* ModelTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelTableViewDataSource.h; sourceTree = "<group>"; };
+		75CCF7A21CBA148000A8F349 /* ModelTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTableViewDataSource.m; sourceTree = "<group>"; };
+		75CCF7A31CBA148000A8F349 /* ReusableFooterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReusableFooterModel.h; sourceTree = "<group>"; };
+		75CCF7A41CBA148000A8F349 /* ReusableFooterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReusableFooterModel.m; sourceTree = "<group>"; };
+		75CCF7A51CBA148000A8F349 /* ReusableHeaderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReusableHeaderModel.h; sourceTree = "<group>"; };
+		75CCF7A61CBA148000A8F349 /* ReusableHeaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReusableHeaderModel.m; sourceTree = "<group>"; };
+		75CCF7A71CBA148000A8F349 /* SupplementaryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupplementaryModel.h; sourceTree = "<group>"; };
+		75CCF7A81CBA148000A8F349 /* SupplementaryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupplementaryModel.m; sourceTree = "<group>"; };
+		75CCF7A91CBA148000A8F349 /* UIColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorPicker.h; sourceTree = "<group>"; };
+		75CCF7AA1CBA148000A8F349 /* UIColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorPicker.m; sourceTree = "<group>"; };
+		75CCF7B41CBA14AB00A8F349 /* MateriaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MateriaModel.h; sourceTree = "<group>"; };
+		75CCF7B51CBA14AB00A8F349 /* MateriaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MateriaModel.m; sourceTree = "<group>"; };
+		75CCF7B81CBA163000A8F349 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		75CCF7B91CBA163000A8F349 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		75CCF7BA1CBA163000A8F349 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		75CCF7C31CBA168200A8F349 /* MaterialTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialTableViewCell.h; sourceTree = "<group>"; };
+		75CCF7C41CBA168200A8F349 /* MaterialTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialTableViewCell.m; sourceTree = "<group>"; };
+		75CCF7C51CBA168200A8F349 /* MaterialTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaterialTableViewCell.xib; sourceTree = "<group>"; };
+		75CCF7C81CBA3E7100A8F349 /* ManualVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualVideoViewController.h; sourceTree = "<group>"; };
+		75CCF7C91CBA3E7100A8F349 /* ManualVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManualVideoViewController.m; sourceTree = "<group>"; };
+		75CCF7CE1CBA3F7400A8F349 /* ManualVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualVideoTableViewCell.h; sourceTree = "<group>"; };
+		75CCF7CF1CBA3F7400A8F349 /* ManualVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManualVideoTableViewCell.m; sourceTree = "<group>"; };
+		75CCF7D01CBA3F7400A8F349 /* ManualVideoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManualVideoTableViewCell.xib; sourceTree = "<group>"; };
+		75CCF7D31CBA470E00A8F349 /* AutoVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoVideoViewController.h; sourceTree = "<group>"; };
+		75CCF7D41CBA470E00A8F349 /* AutoVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoVideoViewController.m; sourceTree = "<group>"; };
+		75CCF7D91CBA732900A8F349 /* AutoVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoVideoTableViewCell.h; sourceTree = "<group>"; };
+		75CCF7DA1CBA732900A8F349 /* AutoVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoVideoTableViewCell.m; sourceTree = "<group>"; };
+		75CCF7DB1CBA732900A8F349 /* AutoVideoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoVideoTableViewCell.xib; sourceTree = "<group>"; };
+		75CCF7E11CBA782500A8F349 /* LCPlayControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPlayControlView.h; sourceTree = "<group>"; };
+		75CCF7E21CBA782500A8F349 /* LCPlayControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPlayControlView.m; sourceTree = "<group>"; };
 		7BB4259B6123626150E1F964 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E8D16DBEBBCD69FD1BF9EC71 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F2A4E4567B72B083529A1C71 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,21 +149,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7506D2361CB416D4009CD911 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				75574AA51CB6B43600FF4630 /* UIColorPicker.h */,
-				75574AA61CB6B43600FF4630 /* UIColorPicker.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		7506D2371CB416D4009CD911 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7506D23F1CB4174A009CD911 /* HomeTableViewCell.h */,
-				7506D2401CB4174A009CD911 /* HomeTableViewCell.m */,
-				7506D2411CB4174A009CD911 /* HomeTableViewCell.xib */,
+				75CCF7B71CBA163000A8F349 /* Cell */,
+				75CCF7651CBA069D00A8F349 /* GreenBottomBar.h */,
+				75CCF7661CBA069D00A8F349 /* GreenBottomBar.m */,
+				75CCF7E11CBA782500A8F349 /* LCPlayControlView.h */,
+				75CCF7E21CBA782500A8F349 /* LCPlayControlView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -102,24 +168,12 @@
 				7506D23A1CB416EA009CD911 /* HomeViewController.m */,
 				756B72161CB8F29500269EE8 /* MaterialController.h */,
 				756B72171CB8F29500269EE8 /* MaterialController.m */,
+				75CCF7C81CBA3E7100A8F349 /* ManualVideoViewController.h */,
+				75CCF7C91CBA3E7100A8F349 /* ManualVideoViewController.m */,
+				75CCF7D31CBA470E00A8F349 /* AutoVideoViewController.h */,
+				75CCF7D41CBA470E00A8F349 /* AutoVideoViewController.m */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		75574AA81CB6B62700FF4630 /* LCFoundation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LCFoundation;
-			sourceTree = "<group>";
-		};
-		75574AA91CB6B62700FF4630 /* LCUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				75574AAD1CB6BA2400FF4630 /* UIColor+HexValue.h */,
-				75574AAE1CB6BA2400FF4630 /* UIColor+HexValue.m */,
-			);
-			path = LCUIKit;
 			sourceTree = "<group>";
 		};
 		756B72191CB8F2CF00269EE8 /* Player */ = {
@@ -136,9 +190,9 @@
 		75903BE01CB415BE0070330D = {
 			isa = PBXGroup;
 			children = (
-				75574AA81CB6B62700FF4630 /* LCFoundation */,
-				75574AA91CB6B62700FF4630 /* LCUIKit */,
+				75CCF7751CBA0BE100A8F349 /* ShareLib */,
 				75903BEB1CB415BE0070330D /* DietCoach */,
+				75CCF7881CBA136700A8F349 /* Resource */,
 				75903BEA1CB415BE0070330D /* Products */,
 				4C69F36C3108AF9B363C1E85 /* Pods */,
 				FC34FE29935E957CCDBE4397 /* Frameworks */,
@@ -158,8 +212,10 @@
 			children = (
 				75903BEF1CB415BE0070330D /* AppDelegate.h */,
 				75903BF01CB415BE0070330D /* AppDelegate.m */,
+				75CCF77E1CBA0E2600A8F349 /* LCCommonMacro.h */,
 				756B72191CB8F2CF00269EE8 /* Player */,
-				7506D2361CB416D4009CD911 /* Model */,
+				75CCF7B31CBA149200A8F349 /* ModelData */,
+				75CCF7991CBA148000A8F349 /* ModelLayer */,
 				7506D2371CB416D4009CD911 /* View */,
 				7506D2381CB416D4009CD911 /* ViewController */,
 				75903BEC1CB415BE0070330D /* Supporting Files */,
@@ -177,6 +233,94 @@
 				75903BED1CB415BE0070330D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75CCF7751CBA0BE100A8F349 /* ShareLib */ = {
+			isa = PBXGroup;
+			children = (
+				75CCF77C1CBA0C1C00A8F349 /* LCFoundation.h */,
+				75CCF77D1CBA0C7B00A8F349 /* ehm.h */,
+				75CCF7761CBA0BF400A8F349 /* NSArray+Safe.h */,
+				75CCF7771CBA0BF400A8F349 /* NSArray+Safe.m */,
+				75CCF7781CBA0BF400A8F349 /* NSMutableArray+Safe.h */,
+				75CCF7791CBA0BF400A8F349 /* NSMutableArray+Safe.m */,
+			);
+			path = ShareLib;
+			sourceTree = "<group>";
+		};
+		75CCF7881CBA136700A8F349 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				75CCF7891CBA136700A8F349 /* cook1.mov */,
+				75CCF78A1CBA136700A8F349 /* cook2.mov */,
+				75CCF78B1CBA136700A8F349 /* cook3.mov */,
+				75CCF78C1CBA136700A8F349 /* cook4.mov */,
+				75CCF78D1CBA136700A8F349 /* cook5.mov */,
+				75CCF78E1CBA136700A8F349 /* cook6.mov */,
+				75CCF78F1CBA136700A8F349 /* meterial.mov */,
+				75CCF7901CBA136700A8F349 /* prepare.mov */,
+			);
+			name = Resource;
+			path = DietCoach/Resource;
+			sourceTree = "<group>";
+		};
+		75CCF7991CBA148000A8F349 /* ModelLayer */ = {
+			isa = PBXGroup;
+			children = (
+				75CCF79A1CBA148000A8F349 /* BDReusableViewModel.h */,
+				75CCF79B1CBA148000A8F349 /* BDReusableViewModel.m */,
+				75CCF79C1CBA148000A8F349 /* ModelDataSource */,
+				75CCF7A91CBA148000A8F349 /* UIColorPicker.h */,
+				75CCF7AA1CBA148000A8F349 /* UIColorPicker.m */,
+			);
+			path = ModelLayer;
+			sourceTree = "<group>";
+		};
+		75CCF79C1CBA148000A8F349 /* ModelDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				75CCF79D1CBA148000A8F349 /* BaseModelDataSource.h */,
+				75CCF79E1CBA148000A8F349 /* BaseModelDataSource.m */,
+				75CCF79F1CBA148000A8F349 /* ModelCollectionViewDataSource.h */,
+				75CCF7A01CBA148000A8F349 /* ModelCollectionViewDataSource.m */,
+				75CCF7A11CBA148000A8F349 /* ModelTableViewDataSource.h */,
+				75CCF7A21CBA148000A8F349 /* ModelTableViewDataSource.m */,
+				75CCF7A31CBA148000A8F349 /* ReusableFooterModel.h */,
+				75CCF7A41CBA148000A8F349 /* ReusableFooterModel.m */,
+				75CCF7A51CBA148000A8F349 /* ReusableHeaderModel.h */,
+				75CCF7A61CBA148000A8F349 /* ReusableHeaderModel.m */,
+				75CCF7A71CBA148000A8F349 /* SupplementaryModel.h */,
+				75CCF7A81CBA148000A8F349 /* SupplementaryModel.m */,
+			);
+			path = ModelDataSource;
+			sourceTree = "<group>";
+		};
+		75CCF7B31CBA149200A8F349 /* ModelData */ = {
+			isa = PBXGroup;
+			children = (
+				75CCF7B41CBA14AB00A8F349 /* MateriaModel.h */,
+				75CCF7B51CBA14AB00A8F349 /* MateriaModel.m */,
+			);
+			path = ModelData;
+			sourceTree = "<group>";
+		};
+		75CCF7B71CBA163000A8F349 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				75CCF7B81CBA163000A8F349 /* HomeTableViewCell.h */,
+				75CCF7B91CBA163000A8F349 /* HomeTableViewCell.m */,
+				75CCF7BA1CBA163000A8F349 /* HomeTableViewCell.xib */,
+				75CCF7C31CBA168200A8F349 /* MaterialTableViewCell.h */,
+				75CCF7C41CBA168200A8F349 /* MaterialTableViewCell.m */,
+				75CCF7C51CBA168200A8F349 /* MaterialTableViewCell.xib */,
+				75CCF7CE1CBA3F7400A8F349 /* ManualVideoTableViewCell.h */,
+				75CCF7CF1CBA3F7400A8F349 /* ManualVideoTableViewCell.m */,
+				75CCF7D01CBA3F7400A8F349 /* ManualVideoTableViewCell.xib */,
+				75CCF7D91CBA732900A8F349 /* AutoVideoTableViewCell.h */,
+				75CCF7DA1CBA732900A8F349 /* AutoVideoTableViewCell.m */,
+				75CCF7DB1CBA732900A8F349 /* AutoVideoTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		FC34FE29935E957CCDBE4397 /* Frameworks */ = {
@@ -248,10 +392,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CCF7951CBA136700A8F349 /* cook5.mov in Resources */,
 				75903BFC1CB415BE0070330D /* LaunchScreen.storyboard in Resources */,
+				75CCF7941CBA136700A8F349 /* cook4.mov in Resources */,
 				75903BF91CB415BE0070330D /* Assets.xcassets in Resources */,
-				7506D2431CB4174A009CD911 /* HomeTableViewCell.xib in Resources */,
+				75CCF7911CBA136700A8F349 /* cook1.mov in Resources */,
+				75CCF7D21CBA3F7400A8F349 /* ManualVideoTableViewCell.xib in Resources */,
+				75CCF7921CBA136700A8F349 /* cook2.mov in Resources */,
+				75CCF7C71CBA168200A8F349 /* MaterialTableViewCell.xib in Resources */,
+				75CCF7981CBA136700A8F349 /* prepare.mov in Resources */,
+				75CCF7BC1CBA163000A8F349 /* HomeTableViewCell.xib in Resources */,
+				75CCF7961CBA136700A8F349 /* cook6.mov in Resources */,
 				75903BF71CB415BE0070330D /* Main.storyboard in Resources */,
+				75CCF7931CBA136700A8F349 /* cook3.mov in Resources */,
+				75CCF7DD1CBA732900A8F349 /* AutoVideoTableViewCell.xib in Resources */,
+				75CCF7971CBA136700A8F349 /* meterial.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,15 +465,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CCF7C61CBA168200A8F349 /* MaterialTableViewCell.m in Sources */,
+				75CCF7E31CBA782500A8F349 /* LCPlayControlView.m in Sources */,
 				756B721E1CB8F4B600269EE8 /* LCPlayerView.m in Sources */,
+				75CCF77A1CBA0BF400A8F349 /* NSArray+Safe.m in Sources */,
+				75CCF7BB1CBA163000A8F349 /* HomeTableViewCell.m in Sources */,
+				75CCF7B11CBA148000A8F349 /* SupplementaryModel.m in Sources */,
+				75CCF7AC1CBA148000A8F349 /* BaseModelDataSource.m in Sources */,
+				75CCF7AE1CBA148000A8F349 /* ModelTableViewDataSource.m in Sources */,
+				75CCF7CA1CBA3E7100A8F349 /* ManualVideoViewController.m in Sources */,
+				75CCF7B01CBA148000A8F349 /* ReusableHeaderModel.m in Sources */,
+				75CCF7D51CBA470E00A8F349 /* AutoVideoViewController.m in Sources */,
 				756B72211CB8F5DF00269EE8 /* LCPlayer.m in Sources */,
-				75574AA71CB6B43600FF4630 /* UIColorPicker.m in Sources */,
+				75CCF7AF1CBA148000A8F349 /* ReusableFooterModel.m in Sources */,
 				75903BF11CB415BE0070330D /* AppDelegate.m in Sources */,
+				75CCF77B1CBA0BF400A8F349 /* NSMutableArray+Safe.m in Sources */,
+				75CCF7DC1CBA732900A8F349 /* AutoVideoTableViewCell.m in Sources */,
+				75CCF7D11CBA3F7400A8F349 /* ManualVideoTableViewCell.m in Sources */,
+				75CCF7AD1CBA148000A8F349 /* ModelCollectionViewDataSource.m in Sources */,
 				75903BEE1CB415BE0070330D /* main.m in Sources */,
-				75574AAF1CB6BA2400FF4630 /* UIColor+HexValue.m in Sources */,
 				756B72181CB8F29500269EE8 /* MaterialController.m in Sources */,
-				7506D2421CB4174A009CD911 /* HomeTableViewCell.m in Sources */,
+				75CCF7AB1CBA148000A8F349 /* BDReusableViewModel.m in Sources */,
+				75CCF7B21CBA148000A8F349 /* UIColorPicker.m in Sources */,
+				75CCF7B61CBA14AB00A8F349 /* MateriaModel.m in Sources */,
 				7506D23B1CB416EA009CD911 /* HomeViewController.m in Sources */,
+				75CCF7671CBA069D00A8F349 /* GreenBottomBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +546,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -433,6 +605,7 @@
 			baseConfigurationReference = 7BB4259B6123626150E1F964 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = DietCoach/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.DietCoach;

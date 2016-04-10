@@ -10,6 +10,7 @@
 #import "Masonry.h"
 #import "HomeTableViewCell.h"
 #import "UIColorPicker.h"
+#import "MaterialController.h"
 
 static NSString *kIdentifier = @"identifier";
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -25,7 +26,7 @@ static NSString *kIdentifier = @"identifier";
     UINavigationBar *bar = self.navigationController.navigationBar;
     [bar setTranslucent:NO];
     [bar setBarTintColor:[UIColorPicker barYellowColor]];
-//    [bar setTintColor:[UIColorPicker barYellowColor]];
+    [bar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColorPicker barTitleColor]}];
     [self layoutPageSubviews];
 }
 
@@ -53,6 +54,14 @@ static NSString *kIdentifier = @"identifier";
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 200;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    MaterialController *controller = [MaterialController new];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 #pragma mark - getter

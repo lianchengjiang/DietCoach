@@ -10,8 +10,10 @@
 #import "LCPlayerView.h"
 
 @interface LCPlayer : NSObject
-@property (nonatomic, strong) LCPlayerView *playerView;
+@property (nonatomic, strong, readonly) LCPlayerView *playerView;
+@property (nonatomic, strong) NSURL *playURL;
 
+- (void)play;
+- (void)pause;
 
-- (void)playWithURL:(NSURL *)URL;
 @end

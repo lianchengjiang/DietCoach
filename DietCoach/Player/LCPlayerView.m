@@ -15,6 +15,15 @@
     return [AVPlayerLayer class];
 }
 
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        ((AVPlayerLayer *)self.layer).videoGravity = AVLayerVideoGravityResizeAspectFill;
+    }
+    return self;
+}
+
 - (void)setPlayer:(AVPlayer *)player
 {
     [(AVPlayerLayer *)self.layer setPlayer:player];

@@ -1,10 +1,13 @@
 PODS:
+  - LCUIKit (0.0.2)
   - Masonry (1.0.0)
 
 DEPENDENCIES:
+  - LCUIKit
   - Masonry
 
 SPEC CHECKSUMS:
+  LCUIKit: bd8798cd9b1508c64b07e1786111a2480ed0889c
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
 
 COCOAPODS: 0.39.0
