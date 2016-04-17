@@ -83,7 +83,7 @@
         model.URL = [[NSBundle mainBundle] URLForResource:@"cook1" withExtension:@"mov"];
         model.materialList = [AutoVideoCellModel modelListWithList:nil];
         model.fireModel = [DCFireViewModel modelWithLevel:DCFireLevelLarge];
-        model.timeModel = [DCTimeModel modelWithSecond:60];
+        model.timeModel = [DCTimeModel modelWithSecond:20];
         model;
     })];
     
@@ -92,7 +92,7 @@
         model.URL = [[NSBundle mainBundle] URLForResource:@"cook2" withExtension:@"mov"];
         model.materialList = [AutoVideoCellModel modelListWithList:nil];
         model.fireModel = [DCFireViewModel modelWithLevel:DCFireLevelLarge];
-        model.timeModel = [DCTimeModel modelWithSecond:60];
+        model.timeModel = [DCTimeModel modelWithSecond:30];
         model;
     })];
     
@@ -110,7 +110,7 @@
         model.URL = [[NSBundle mainBundle] URLForResource:@"cook4" withExtension:@"mov"];
         model.materialList = [AutoVideoCellModel modelListWithList:nil];
         model.fireModel = [DCFireViewModel modelWithLevel:DCFireLevelLarge];
-        model.timeModel = [DCTimeModel modelWithSecond:60];
+        model.timeModel = [DCTimeModel modelWithSecond:30];
         model;
     })];
     
@@ -119,7 +119,7 @@
         model.URL = [[NSBundle mainBundle] URLForResource:@"cook5" withExtension:@"mov"];
         model.materialList = [AutoVideoCellModel modelListWithList:nil];
         model.fireModel = [DCFireViewModel modelWithLevel:DCFireLevelLarge];
-        model.timeModel = [DCTimeModel modelWithSecond:60];
+        model.timeModel = [DCTimeModel modelWithSecond:30];
         model;
     })];
     
@@ -128,7 +128,7 @@
         model.URL = [[NSBundle mainBundle] URLForResource:@"cook6" withExtension:@"mov"];
         model.materialList = [AutoVideoCellModel modelListWithList:nil];
         model.fireModel = [DCFireViewModel modelWithLevel:DCFireLevelLarge];
-        model.timeModel = [DCTimeModel modelWithSecond:60];
+        model.timeModel = [DCTimeModel modelWithSecond:0];
         model;
     })];
     

@@ -79,7 +79,7 @@
 #pragma mark - timer
 - (void)startTimer
 {
-    if ([self.timer isValid]) {
+    if ([self.timer isValid] || self.remainTime <= 0) {
         return;
     }
     self.timer = [NSTimer safe_scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerAction) userInfo:nil repeats:YES disableIfBackground:YES];
@@ -93,11 +93,13 @@
 
 - (void)timerAction
 {
+    self.remainTime --;
     if (self.remainTime > 0) {
-        self.remainTime --;
-    } else {
-        [self stopTimer];
+        return;
     }
+
+    [self stopTimer];
+    [self.delegate recordCompletedInTimeView:self];
 }
 
 #pragma mark - setter

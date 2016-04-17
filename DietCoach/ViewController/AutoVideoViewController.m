@@ -16,7 +16,7 @@
 #import "LCPlayControlView.h"
 #import "ModelTableViewDataSource.h"
 
-@interface AutoVideoViewController ()
+@interface AutoVideoViewController ()<DCRecordTimeViewDelegate>
 
 @property (nonatomic, strong) LCPlayer *player;
 @property (nonatomic, strong) UITableView *tableView;
@@ -116,6 +116,12 @@
     RAC(self.dataSource,itemList) = RACObserve(self, model.materialList);
 }
 
+#pragma mark - DCRecordTimeViewDelegate
+- (void)recordCompletedInTimeView:(DCRecordTimeView *)view
+{
+    [self.model goForward];
+}
+
 #pragma mark - getter
 - (LCPlayer *)player
 {
@@ -148,6 +154,7 @@
 {
     if (!_recordView) {
         _recordView = [DCRecordTimeView new];
+        _recordView.delegate = self;
     }
     return _recordView;
 }
