@@ -8,9 +8,18 @@
 
 #import "AutoVideoViewController.h"
 #import "LCPlayer.h"
+#import "AutoVideoViewModel.h"
+#import "DCFireView.h"
+#import "DCTimeView.h"
 
 @interface AutoVideoViewController ()
+
 @property (nonatomic, strong) LCPlayer *player;
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) DCFireView *fireView;
+@property (nonatomic, strong) DCTimeView *timeView;
+
+@property (nonatomic, strong) AutoVideoViewModel *viewModel;
 
 @end
 
@@ -18,9 +27,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
+#pragma mark - bind
+- (void)bindViewWithModel
+{
+    
+}
 
 #pragma mark - getter
 - (LCPlayer *)player
@@ -32,5 +46,8 @@
     _player = [LCPlayer new];
     return _player;
 }
+
+#pragma mark - getter
+
 
 @end

@@ -27,4 +27,9 @@
     return [UIColor lc_colorWithHexValue:0x63b806];
 }
 
++ (NSUInteger)fireRedColorValue
+{
+    return 0xd92827;
+}
+
 @end

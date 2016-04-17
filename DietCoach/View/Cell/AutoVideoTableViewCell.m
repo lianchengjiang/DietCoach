@@ -7,12 +7,22 @@
 //
 
 #import "AutoVideoTableViewCell.h"
+#import "ReactiveCocoa.h"
+
+
+@interface AutoVideoTableViewCell ()
+@property (weak, nonatomic) IBOutlet UILabel *headLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tailLabel;
+
+@end
 
 @implementation AutoVideoTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    RAC(self.headLabel, text) = RACObserve(self, model.headString);
+    RAC(self.tailLabel, text) = RACObserve(self, model.tailString);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

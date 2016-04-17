@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AutoVideoCellModel.h"
 
 @interface AutoVideoTableViewCell : UITableViewCell
+@property (nonatomic, strong) AutoVideoCellModel *model;
 
 @end

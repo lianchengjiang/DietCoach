@@ -7,17 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class LCPlayControlView;
-@protocol LCPlayControlViewDelegate <NSObject>
-
-- (void)gobackButtonDidTouchedInControlView:(LCPlayControlView *)controlView;
-- (void)goForwardButtonDidTouchedInControlView:(LCPlayControlView *)controlView;
-- (void)stopButtonDidTouchedInControlView:(LCPlayControlView *)controlView;
-
-@end
+#import "ReactiveCocoa.h"
+#import "DCPlayerControlModel.h"
 
 @interface LCPlayControlView : UIView
-@property (nonatomic, weak) id<LCPlayControlViewDelegate> delegate;
+@property (nonatomic, strong, readonly) RACSignal *backSignal;
+@property (nonatomic, strong, readonly) RACSignal *forwardSignal;
+@property (nonatomic, strong, readonly) RACSignal *playSignal;
 
+@property (nonatomic, strong) DCPlayerControlModel *controlModel;
 @end

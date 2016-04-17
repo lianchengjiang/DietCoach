@@ -13,7 +13,38 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxS-jU-hVc">
+                        <rect key="frame" x="15" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gky-7J-7bF">
+                        <rect key="frame" x="220" y="11.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vxS-jU-hVc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="51y-Sw-Wx1"/>
+                    <constraint firstAttribute="trailing" secondItem="Gky-7J-7bF" secondAttribute="leading" constant="100" id="JsO-ke-ugE"/>
+                    <constraint firstItem="vxS-jU-hVc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="SMV-tM-Upn"/>
+                    <constraint firstItem="Gky-7J-7bF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SVe-nt-TaT"/>
+                    <constraint firstItem="vxS-jU-hVc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jhy-JK-J4u"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="SMV-tM-Upn"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="headLabel" destination="vxS-jU-hVc" id="ibP-sO-Oot"/>
+                <outlet property="tailLabel" destination="Gky-7J-7bF" id="IjW-sV-U4C"/>
+            </connections>
+            <point key="canvasLocation" x="391" y="353"/>
         </tableViewCell>
     </objects>
 </document>

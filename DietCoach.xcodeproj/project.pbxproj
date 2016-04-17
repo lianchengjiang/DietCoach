@@ -7,11 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BDC528F72AB980586454CEE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1747CFC0C2EE27C330709955 /* Pods.framework */; };
 		7506D23B1CB416EA009CD911 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7506D23A1CB416EA009CD911 /* HomeViewController.m */; };
+		750D79D71CC26CAD004EAFFC /* DCTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 750D79D61CC26CAD004EAFFC /* DCTimeView.m */; };
+		752057481CC1E52200DB7183 /* DCTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 752057471CC1E52200DB7183 /* DCTimeModel.m */; };
+		7520574E1CC1EA1100DB7183 /* AutoVideoCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7520574D1CC1EA1100DB7183 /* AutoVideoCellModel.m */; };
+		752057511CC25F2A00DB7183 /* DCPlayerControlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 752057501CC25F2A00DB7183 /* DCPlayerControlModel.m */; };
+		752057541CC26A1100DB7183 /* DCFireView.m in Sources */ = {isa = PBXBuildFile; fileRef = 752057531CC26A1100DB7183 /* DCFireView.m */; };
+		755B01361CBFEA4D003838D9 /* AutoVideoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 755B01351CBFEA4D003838D9 /* AutoVideoViewModel.m */; };
+		755B01391CBFECF4003838D9 /* DCFireViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 755B01381CBFECF4003838D9 /* DCFireViewModel.m */; };
 		756B72181CB8F29500269EE8 /* MaterialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 756B72171CB8F29500269EE8 /* MaterialController.m */; };
 		756B721B1CB8F31300269EE8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756B721A1CB8F31300269EE8 /* AVFoundation.framework */; };
 		756B721E1CB8F4B600269EE8 /* LCPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 756B721D1CB8F4B600269EE8 /* LCPlayerView.m */; };
 		756B72211CB8F5DF00269EE8 /* LCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 756B72201CB8F5DF00269EE8 /* LCPlayer.m */; };
+		757A47081CC32B340098DAC5 /* DCRecordTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 757A47071CC32B340098DAC5 /* DCRecordTimeView.m */; };
 		75903BEE1CB415BE0070330D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75903BED1CB415BE0070330D /* main.m */; };
 		75903BF11CB415BE0070330D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75903BF01CB415BE0070330D /* AppDelegate.m */; };
 		75903BF71CB415BE0070330D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75903BF51CB415BE0070330D /* Main.storyboard */; };
@@ -48,12 +57,26 @@
 		75CCF7DC1CBA732900A8F349 /* AutoVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7DA1CBA732900A8F349 /* AutoVideoTableViewCell.m */; };
 		75CCF7DD1CBA732900A8F349 /* AutoVideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75CCF7DB1CBA732900A8F349 /* AutoVideoTableViewCell.xib */; };
 		75CCF7E31CBA782500A8F349 /* LCPlayControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CCF7E21CBA782500A8F349 /* LCPlayControlView.m */; };
-		9917EFF21B669AAE5C265019 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A4E4567B72B083529A1C71 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1747CFC0C2EE27C330709955 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7506D2391CB416EA009CD911 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		7506D23A1CB416EA009CD911 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		750D79D51CC26CAD004EAFFC /* DCTimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTimeView.h; sourceTree = "<group>"; };
+		750D79D61CC26CAD004EAFFC /* DCTimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTimeView.m; sourceTree = "<group>"; };
+		752057461CC1E52200DB7183 /* DCTimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTimeModel.h; sourceTree = "<group>"; };
+		752057471CC1E52200DB7183 /* DCTimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTimeModel.m; sourceTree = "<group>"; };
+		7520574C1CC1EA1100DB7183 /* AutoVideoCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoVideoCellModel.h; sourceTree = "<group>"; };
+		7520574D1CC1EA1100DB7183 /* AutoVideoCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoVideoCellModel.m; sourceTree = "<group>"; };
+		7520574F1CC25F2A00DB7183 /* DCPlayerControlModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPlayerControlModel.h; sourceTree = "<group>"; };
+		752057501CC25F2A00DB7183 /* DCPlayerControlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPlayerControlModel.m; sourceTree = "<group>"; };
+		752057521CC26A1100DB7183 /* DCFireView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFireView.h; sourceTree = "<group>"; };
+		752057531CC26A1100DB7183 /* DCFireView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCFireView.m; sourceTree = "<group>"; };
+		755B01341CBFEA4D003838D9 /* AutoVideoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoVideoViewModel.h; sourceTree = "<group>"; };
+		755B01351CBFEA4D003838D9 /* AutoVideoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoVideoViewModel.m; sourceTree = "<group>"; };
+		755B01371CBFECF4003838D9 /* DCFireViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFireViewModel.h; sourceTree = "<group>"; };
+		755B01381CBFECF4003838D9 /* DCFireViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCFireViewModel.m; sourceTree = "<group>"; };
 		756B72161CB8F29500269EE8 /* MaterialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialController.h; sourceTree = "<group>"; };
 		756B72171CB8F29500269EE8 /* MaterialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialController.m; sourceTree = "<group>"; };
 		756B721A1CB8F31300269EE8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -61,6 +84,8 @@
 		756B721D1CB8F4B600269EE8 /* LCPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPlayerView.m; sourceTree = "<group>"; };
 		756B721F1CB8F5DF00269EE8 /* LCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPlayer.h; sourceTree = "<group>"; };
 		756B72201CB8F5DF00269EE8 /* LCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPlayer.m; sourceTree = "<group>"; };
+		757A47061CC32B340098DAC5 /* DCRecordTimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCRecordTimeView.h; sourceTree = "<group>"; };
+		757A47071CC32B340098DAC5 /* DCRecordTimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRecordTimeView.m; sourceTree = "<group>"; };
 		75903BE91CB415BE0070330D /* DietCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DietCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75903BED1CB415BE0070330D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75903BEF1CB415BE0070330D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,7 +149,6 @@
 		75CCF7E21CBA782500A8F349 /* LCPlayControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPlayControlView.m; sourceTree = "<group>"; };
 		7BB4259B6123626150E1F964 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E8D16DBEBBCD69FD1BF9EC71 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		F2A4E4567B72B083529A1C71 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				756B721B1CB8F31300269EE8 /* AVFoundation.framework in Frameworks */,
-				9917EFF21B669AAE5C265019 /* libPods.a in Frameworks */,
+				3BDC528F72AB980586454CEE /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +181,12 @@
 				75CCF7661CBA069D00A8F349 /* GreenBottomBar.m */,
 				75CCF7E11CBA782500A8F349 /* LCPlayControlView.h */,
 				75CCF7E21CBA782500A8F349 /* LCPlayControlView.m */,
+				752057521CC26A1100DB7183 /* DCFireView.h */,
+				752057531CC26A1100DB7183 /* DCFireView.m */,
+				750D79D51CC26CAD004EAFFC /* DCTimeView.h */,
+				750D79D61CC26CAD004EAFFC /* DCTimeView.m */,
+				757A47061CC32B340098DAC5 /* DCRecordTimeView.h */,
+				757A47071CC32B340098DAC5 /* DCRecordTimeView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,6 +330,16 @@
 			children = (
 				75CCF7B41CBA14AB00A8F349 /* MateriaModel.h */,
 				75CCF7B51CBA14AB00A8F349 /* MateriaModel.m */,
+				7520574C1CC1EA1100DB7183 /* AutoVideoCellModel.h */,
+				7520574D1CC1EA1100DB7183 /* AutoVideoCellModel.m */,
+				755B01371CBFECF4003838D9 /* DCFireViewModel.h */,
+				755B01381CBFECF4003838D9 /* DCFireViewModel.m */,
+				752057461CC1E52200DB7183 /* DCTimeModel.h */,
+				752057471CC1E52200DB7183 /* DCTimeModel.m */,
+				7520574F1CC25F2A00DB7183 /* DCPlayerControlModel.h */,
+				752057501CC25F2A00DB7183 /* DCPlayerControlModel.m */,
+				755B01341CBFEA4D003838D9 /* AutoVideoViewModel.h */,
+				755B01351CBFEA4D003838D9 /* AutoVideoViewModel.m */,
 			);
 			path = ModelData;
 			sourceTree = "<group>";
@@ -327,7 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				756B721A1CB8F31300269EE8 /* AVFoundation.framework */,
-				F2A4E4567B72B083529A1C71 /* libPods.a */,
+				1747CFC0C2EE27C330709955 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -467,11 +507,14 @@
 			files = (
 				75CCF7C61CBA168200A8F349 /* MaterialTableViewCell.m in Sources */,
 				75CCF7E31CBA782500A8F349 /* LCPlayControlView.m in Sources */,
+				7520574E1CC1EA1100DB7183 /* AutoVideoCellModel.m in Sources */,
+				752057511CC25F2A00DB7183 /* DCPlayerControlModel.m in Sources */,
 				756B721E1CB8F4B600269EE8 /* LCPlayerView.m in Sources */,
 				75CCF77A1CBA0BF400A8F349 /* NSArray+Safe.m in Sources */,
 				75CCF7BB1CBA163000A8F349 /* HomeTableViewCell.m in Sources */,
 				75CCF7B11CBA148000A8F349 /* SupplementaryModel.m in Sources */,
 				75CCF7AC1CBA148000A8F349 /* BaseModelDataSource.m in Sources */,
+				752057481CC1E52200DB7183 /* DCTimeModel.m in Sources */,
 				75CCF7AE1CBA148000A8F349 /* ModelTableViewDataSource.m in Sources */,
 				75CCF7CA1CBA3E7100A8F349 /* ManualVideoViewController.m in Sources */,
 				75CCF7B01CBA148000A8F349 /* ReusableHeaderModel.m in Sources */,
@@ -480,13 +523,18 @@
 				75CCF7AF1CBA148000A8F349 /* ReusableFooterModel.m in Sources */,
 				75903BF11CB415BE0070330D /* AppDelegate.m in Sources */,
 				75CCF77B1CBA0BF400A8F349 /* NSMutableArray+Safe.m in Sources */,
+				755B01361CBFEA4D003838D9 /* AutoVideoViewModel.m in Sources */,
 				75CCF7DC1CBA732900A8F349 /* AutoVideoTableViewCell.m in Sources */,
 				75CCF7D11CBA3F7400A8F349 /* ManualVideoTableViewCell.m in Sources */,
+				752057541CC26A1100DB7183 /* DCFireView.m in Sources */,
 				75CCF7AD1CBA148000A8F349 /* ModelCollectionViewDataSource.m in Sources */,
 				75903BEE1CB415BE0070330D /* main.m in Sources */,
+				750D79D71CC26CAD004EAFFC /* DCTimeView.m in Sources */,
 				756B72181CB8F29500269EE8 /* MaterialController.m in Sources */,
+				757A47081CC32B340098DAC5 /* DCRecordTimeView.m in Sources */,
 				75CCF7AB1CBA148000A8F349 /* BDReusableViewModel.m in Sources */,
 				75CCF7B21CBA148000A8F349 /* UIColorPicker.m in Sources */,
+				755B01391CBFECF4003838D9 /* DCFireViewModel.m in Sources */,
 				75CCF7B61CBA14AB00A8F349 /* MateriaModel.m in Sources */,
 				7506D23B1CB416EA009CD911 /* HomeViewController.m in Sources */,
 				75CCF7671CBA069D00A8F349 /* GreenBottomBar.m in Sources */,

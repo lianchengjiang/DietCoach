@@ -8,6 +8,7 @@
 
 #import "LCPlayControlView.h"
 #import "Masonry.h"
+#import "LCCommonMacro.h"
 
 @interface LCPlayControlView ()
 @property (nonatomic, strong) UIButton *backButton;
@@ -31,7 +32,15 @@
 
 - (void)initializeConfig
 {
-    
+    RAC(self.backButton, enabled) = RACObserve(self, controlModel.canBack);
+    RAC(self.forwardButton, enabled) = RACObserve(self, controlModel.canForward);
+    [RACObserve(self, controlModel.playing) subscribeNext:^(NSNumber *playingNum) {
+        if ([playingNum boolValue]) {
+            [_stopButton setImage:[UIImage imageNamed:@"btn_stop"] forState:UIControlStateNormal];
+        } else {
+            
+        }
+    }];
 }
 
 - (void)layoutPageSubviews
@@ -58,22 +67,6 @@
     }];
 }
 
-#pragma mark - Action
-- (void)goBack
-{
-    [self.delegate gobackButtonDidTouchedInControlView:self];
-}
-
-- (void)goForward
-{
-    [self.delegate goForwardButtonDidTouchedInControlView:self];
-}
-
-- (void)stop
-{
-    [self.delegate stopButtonDidTouchedInControlView:self];
-}
-
 #pragma mark - getter
 - (UIButton *)backButton
 {
@@ -82,7 +75,7 @@
     }
     _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_backButton setImage:[UIImage imageNamed:@"btn_left"] forState:UIControlStateNormal];
-    [_backButton addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
+    _backSignal = [_backButton rac_signalForControlEvents:UIControlEventTouchUpInside];
     return _backButton;
 }
 
@@ -93,7 +86,7 @@
     }
     _forwardButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_forwardButton setImage:[UIImage imageNamed:@"btn_right"] forState:UIControlStateNormal];
-    [_forwardButton addTarget:self action:@selector(goForward) forControlEvents:UIControlEventTouchUpInside];
+    _forwardSignal = [_forwardButton rac_signalForControlEvents:UIControlEventTouchUpInside];
     return _forwardButton;
 }
 
@@ -104,7 +97,11 @@
     }
     _stopButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_stopButton setImage:[UIImage imageNamed:@"btn_stop"] forState:UIControlStateNormal];
-    [_stopButton addTarget:self action:@selector(stop) forControlEvents:UIControlEventTouchUpInside];
+    @weakify(self);
+    _playSignal = [[_stopButton rac_signalForControlEvents:UIControlEventTouchUpInside] map:^id(id value) {
+        @strongify(self);
+        return @(self.controlModel.playing);
+    }];
     return _stopButton;
 }
 

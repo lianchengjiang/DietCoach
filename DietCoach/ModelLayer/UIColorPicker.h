@@ -15,4 +15,6 @@
 + (UIColor *)barTitleColor;
 + (UIColor *)greenColor;
 
++ (NSUInteger)fireRedColorValue;
+
 @end
