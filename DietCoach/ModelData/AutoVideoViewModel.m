@@ -11,6 +11,7 @@
 
 @interface AutoVideoInnerViewModel : NSObject
 @property (nonatomic, copy) NSURL *URL;
+@property (nonatomic, strong) NSURL *audioURL;
 @property (nonatomic, copy) NSArray<AutoVideoCellModel *> *materialList;
 @property (nonatomic, strong) DCFireViewModel *fireModel;
 @property (nonatomic, strong) DCTimeModel *timeModel;
@@ -62,6 +63,7 @@
     _index = index;
     AutoVideoViewModel *model = self.modelList[index];
     self.URL = model.URL;
+    self.audioURL = model.audioURL;
     self.timeModel = model.timeModel;
     self.fireModel = model.fireModel;
     self.materialList = model.materialList;
@@ -81,6 +83,7 @@
     [list addObject:({
         AutoVideoInnerViewModel *model = [AutoVideoInnerViewModel new];
         model.URL = [[NSBundle mainBundle] URLForResource:@"cook1" withExtension:@"mov"];
+        model.audioURL = [[NSBundle mainBundle] URLForResource:@"audio1" withExtension:@"wav"];
         model.materialList = [AutoVideoCellModel modelListWithList:nil];
         model.fireModel = [DCFireViewModel modelWithLevel:DCFireLevelLarge];
         model.timeModel = [DCTimeModel modelWithSecond:20];
@@ -90,6 +93,7 @@
     [list addObject:({
         AutoVideoInnerViewModel *model = [AutoVideoInnerViewModel new];
         model.URL = [[NSBundle mainBundle] URLForResource:@"cook2" withExtension:@"mov"];
+        model.audioURL = [[NSBundle mainBundle] URLForResource:@"audio2" withExtension:@"wav"];
         model.materialList = [AutoVideoCellModel modelListWithList:nil];
         model.fireModel = [DCFireViewModel modelWithLevel:DCFireLevelLarge];
         model.timeModel = [DCTimeModel modelWithSecond:30];
@@ -99,6 +103,7 @@
     [list addObject:({
         AutoVideoInnerViewModel *model = [AutoVideoInnerViewModel new];
         model.URL = [[NSBundle mainBundle] URLForResource:@"cook3" withExtension:@"mov"];
+        model.audioURL = [[NSBundle mainBundle] URLForResource:@"audio3" withExtension:@"wav"];
         model.materialList = [AutoVideoCellModel modelListWithList:nil];
         model.fireModel = [DCFireViewModel modelWithLevel:DCFireLevelLarge];
         model.timeModel = [DCTimeModel modelWithSecond:60];
@@ -108,6 +113,7 @@
     [list addObject:({
         AutoVideoInnerViewModel *model = [AutoVideoInnerViewModel new];
         model.URL = [[NSBundle mainBundle] URLForResource:@"cook4" withExtension:@"mov"];
+        model.audioURL = [[NSBundle mainBundle] URLForResource:@"audio4" withExtension:@"wav"];
         model.materialList = [AutoVideoCellModel modelListWithList:nil];
         model.fireModel = [DCFireViewModel modelWithLevel:DCFireLevelLarge];
         model.timeModel = [DCTimeModel modelWithSecond:30];
@@ -117,6 +123,7 @@
     [list addObject:({
         AutoVideoInnerViewModel *model = [AutoVideoInnerViewModel new];
         model.URL = [[NSBundle mainBundle] URLForResource:@"cook5" withExtension:@"mov"];
+        model.audioURL = [[NSBundle mainBundle] URLForResource:@"audio5" withExtension:@"wav"];
         model.materialList = [AutoVideoCellModel modelListWithList:nil];
         model.fireModel = [DCFireViewModel modelWithLevel:DCFireLevelLarge];
         model.timeModel = [DCTimeModel modelWithSecond:30];
@@ -126,6 +133,7 @@
     [list addObject:({
         AutoVideoInnerViewModel *model = [AutoVideoInnerViewModel new];
         model.URL = [[NSBundle mainBundle] URLForResource:@"cook6" withExtension:@"mov"];
+        model.audioURL = [[NSBundle mainBundle] URLForResource:@"audio6" withExtension:@"wav"];
         model.materialList = [AutoVideoCellModel modelListWithList:nil];
         model.fireModel = [DCFireViewModel modelWithLevel:DCFireLevelLarge];
         model.timeModel = [DCTimeModel modelWithSecond:0];

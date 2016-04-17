@@ -15,10 +15,13 @@
 #import "Masonry.h"
 #import "LCPlayControlView.h"
 #import "ModelTableViewDataSource.h"
+#import "DCAudioPlayer.h"
 
 @interface AutoVideoViewController ()<DCRecordTimeViewDelegate>
 
 @property (nonatomic, strong) LCPlayer *player;
+@property (nonatomic, strong) DCAudioPlayer *audioPlayer;
+
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) DCFireView *fireView;
 @property (nonatomic, strong) DCTimeView *timeView;
@@ -86,6 +89,7 @@
 - (void)bindViewWithModel
 {
     RAC(self.player,playURL) = RACObserve(self, model.URL);
+    RAC(self.audioPlayer,URL) = RACObserve(self, model.audioURL);
     RAC(self.fireView,model) = RACObserve(self, model.fireModel);
     RAC(self.recordView,totalTime) = RACObserve(self, model.timeModel.second);
     RAC(self.timeView,model) = RACObserve(self, model.timeModel);
@@ -132,6 +136,15 @@
     _player = [LCPlayer new];
     return _player;
 }
+
+- (DCAudioPlayer *)audioPlayer
+{
+    if (!_audioPlayer) {
+        _audioPlayer = [DCAudioPlayer new];
+    }
+    return _audioPlayer;
+}
+
 
 - (DCFireView *)fireView
 {

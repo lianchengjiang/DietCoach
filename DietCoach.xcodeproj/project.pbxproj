@@ -14,6 +14,13 @@
 		7520574E1CC1EA1100DB7183 /* AutoVideoCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7520574D1CC1EA1100DB7183 /* AutoVideoCellModel.m */; };
 		752057511CC25F2A00DB7183 /* DCPlayerControlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 752057501CC25F2A00DB7183 /* DCPlayerControlModel.m */; };
 		752057541CC26A1100DB7183 /* DCFireView.m in Sources */ = {isa = PBXBuildFile; fileRef = 752057531CC26A1100DB7183 /* DCFireView.m */; };
+		7528132E1CC3DE3700BB8026 /* DCAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7528132D1CC3DE3700BB8026 /* DCAudioPlayer.m */; };
+		752813351CC3E1CC00BB8026 /* audio1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7528132F1CC3E1CC00BB8026 /* audio1.wav */; };
+		752813361CC3E1CC00BB8026 /* audio2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 752813301CC3E1CC00BB8026 /* audio2.wav */; };
+		752813371CC3E1CC00BB8026 /* audio3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 752813311CC3E1CC00BB8026 /* audio3.wav */; };
+		752813381CC3E1CC00BB8026 /* audio4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 752813321CC3E1CC00BB8026 /* audio4.wav */; };
+		752813391CC3E1CC00BB8026 /* audio5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 752813331CC3E1CC00BB8026 /* audio5.wav */; };
+		7528133A1CC3E1CC00BB8026 /* audio6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 752813341CC3E1CC00BB8026 /* audio6.wav */; };
 		7541F0D81CC3783300197DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7541F0D71CC3783300197DA3 /* Assets.xcassets */; };
 		755B01361CBFEA4D003838D9 /* AutoVideoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 755B01351CBFEA4D003838D9 /* AutoVideoViewModel.m */; };
 		755B01391CBFECF4003838D9 /* DCFireViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 755B01381CBFECF4003838D9 /* DCFireViewModel.m */; };
@@ -71,6 +78,14 @@
 		752057501CC25F2A00DB7183 /* DCPlayerControlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPlayerControlModel.m; sourceTree = "<group>"; };
 		752057521CC26A1100DB7183 /* DCFireView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFireView.h; sourceTree = "<group>"; };
 		752057531CC26A1100DB7183 /* DCFireView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCFireView.m; sourceTree = "<group>"; };
+		7528132C1CC3DE3700BB8026 /* DCAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCAudioPlayer.h; sourceTree = "<group>"; };
+		7528132D1CC3DE3700BB8026 /* DCAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCAudioPlayer.m; sourceTree = "<group>"; };
+		7528132F1CC3E1CC00BB8026 /* audio1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = audio1.wav; sourceTree = "<group>"; };
+		752813301CC3E1CC00BB8026 /* audio2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = audio2.wav; sourceTree = "<group>"; };
+		752813311CC3E1CC00BB8026 /* audio3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = audio3.wav; sourceTree = "<group>"; };
+		752813321CC3E1CC00BB8026 /* audio4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = audio4.wav; sourceTree = "<group>"; };
+		752813331CC3E1CC00BB8026 /* audio5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = audio5.wav; sourceTree = "<group>"; };
+		752813341CC3E1CC00BB8026 /* audio6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = audio6.wav; sourceTree = "<group>"; };
 		7541F0D71CC3783300197DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		755B01341CBFEA4D003838D9 /* AutoVideoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoVideoViewModel.h; sourceTree = "<group>"; };
 		755B01351CBFEA4D003838D9 /* AutoVideoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoVideoViewModel.m; sourceTree = "<group>"; };
@@ -205,6 +220,8 @@
 				756B721D1CB8F4B600269EE8 /* LCPlayerView.m */,
 				756B721F1CB8F5DF00269EE8 /* LCPlayer.h */,
 				756B72201CB8F5DF00269EE8 /* LCPlayer.m */,
+				7528132C1CC3DE3700BB8026 /* DCAudioPlayer.h */,
+				7528132D1CC3DE3700BB8026 /* DCAudioPlayer.m */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -267,6 +284,12 @@
 		75CCF7881CBA136700A8F349 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				7528132F1CC3E1CC00BB8026 /* audio1.wav */,
+				752813301CC3E1CC00BB8026 /* audio2.wav */,
+				752813311CC3E1CC00BB8026 /* audio3.wav */,
+				752813321CC3E1CC00BB8026 /* audio4.wav */,
+				752813331CC3E1CC00BB8026 /* audio5.wav */,
+				752813341CC3E1CC00BB8026 /* audio6.wav */,
 				75CCF7891CBA136700A8F349 /* cook1.mov */,
 				75CCF78A1CBA136700A8F349 /* cook2.mov */,
 				75CCF78B1CBA136700A8F349 /* cook3.mov */,
@@ -426,12 +449,18 @@
 				75CCF7D21CBA3F7400A8F349 /* ManualVideoTableViewCell.xib in Resources */,
 				75CCF7921CBA136700A8F349 /* cook2.mov in Resources */,
 				75CCF7C71CBA168200A8F349 /* MaterialTableViewCell.xib in Resources */,
+				752813361CC3E1CC00BB8026 /* audio2.wav in Resources */,
 				75CCF7981CBA136700A8F349 /* prepare.mov in Resources */,
+				752813351CC3E1CC00BB8026 /* audio1.wav in Resources */,
 				75CCF7BC1CBA163000A8F349 /* HomeTableViewCell.xib in Resources */,
 				75CCF7961CBA136700A8F349 /* cook6.mov in Resources */,
+				7528133A1CC3E1CC00BB8026 /* audio6.wav in Resources */,
+				752813371CC3E1CC00BB8026 /* audio3.wav in Resources */,
 				75903BF71CB415BE0070330D /* Main.storyboard in Resources */,
 				75CCF7931CBA136700A8F349 /* cook3.mov in Resources */,
 				75CCF7DD1CBA732900A8F349 /* AutoVideoTableViewCell.xib in Resources */,
+				752813391CC3E1CC00BB8026 /* audio5.wav in Resources */,
+				752813381CC3E1CC00BB8026 /* audio4.wav in Resources */,
 				75CCF7971CBA136700A8F349 /* meterial.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +536,7 @@
 				756B72211CB8F5DF00269EE8 /* LCPlayer.m in Sources */,
 				75CCF7AF1CBA148000A8F349 /* ReusableFooterModel.m in Sources */,
 				75903BF11CB415BE0070330D /* AppDelegate.m in Sources */,
+				7528132E1CC3DE3700BB8026 /* DCAudioPlayer.m in Sources */,
 				755B01361CBFEA4D003838D9 /* AutoVideoViewModel.m in Sources */,
 				75CCF7DC1CBA732900A8F349 /* AutoVideoTableViewCell.m in Sources */,
 				75CCF7D11CBA3F7400A8F349 /* ManualVideoTableViewCell.m in Sources */,
