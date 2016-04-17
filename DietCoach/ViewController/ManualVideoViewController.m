@@ -13,6 +13,7 @@
 #import "MateriaModel.h"
 #import "MaterialTableViewCell.h"
 #import "ManualVideoTableViewCell.h"
+#import "AutoVideoViewController.h"
 
 @interface ManualVideoViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) LCPlayer *player;
@@ -68,7 +69,8 @@
 #pragma mark - action
 - (void)bottomBarAction
 {
-    
+    AutoVideoViewController *controller = [AutoVideoViewController new];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 #pragma mark - UITableViewDataSource

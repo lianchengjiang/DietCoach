@@ -43,10 +43,11 @@
     
     [self addSubview:self.fireLabel];
     [self.fireLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.fireIcon).offset(3);
+        make.top.equalTo(self.fireIcon.mas_bottom).offset(3);
         make.centerX.equalTo(self.fireIcon);
         make.left.greaterThanOrEqualTo(self);
         make.right.lessThanOrEqualTo(self);
+        make.bottom.offset(0);
     }];
 }
 

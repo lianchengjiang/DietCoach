@@ -3,4 +3,5 @@ use_frameworks!
 
 pod "Masonry"
 pod "LCUIKit"
+pod "LCFoundation"
 pod "ReactiveCocoa"

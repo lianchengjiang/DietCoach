@@ -44,10 +44,11 @@
 
     [self addSubview:self.unitLabel];
     [self.unitLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.timeLabel).offset(5);
+        make.top.equalTo(self.timeLabel.mas_bottom).offset(5);
         make.centerX.equalTo(self.timeLabel);
         make.left.greaterThanOrEqualTo(self);
         make.right.lessThanOrEqualTo(self);
+        make.bottom.offset(0);
     }];
 
 }

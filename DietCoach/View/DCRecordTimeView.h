@@ -10,4 +10,7 @@
 
 @interface DCRecordTimeView : UIView
 
+@property (nonatomic, assign) NSUInteger totalTime;
+@property (nonatomic, assign) BOOL playing;
+
 @end

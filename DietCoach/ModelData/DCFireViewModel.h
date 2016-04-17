@@ -20,4 +20,6 @@ typedef NS_ENUM(NSUInteger, DCFireLevel) {
 @property (nonatomic, readonly, copy) NSString *fireTitle;
 @property (nonatomic, readonly, strong) UIImage *fireImage;
 
++ (instancetype)modelWithLevel:(DCFireLevel)level;
+
 @end

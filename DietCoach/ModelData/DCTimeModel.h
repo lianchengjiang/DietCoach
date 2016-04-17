@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface DCTimeModel : NSObject
-@property (nonatomic, assign) NSTimeInterval second;
-@property (nonatomic, assign, readonly) float time;
+@property (nonatomic, assign) NSUInteger second;
+@property (nonatomic, copy, readonly) NSString *time;
 @property (nonatomic, copy, readonly) NSString *unit;
+
++ (instancetype)modelWithSecond:(NSUInteger)second;
 
 @end

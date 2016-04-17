@@ -13,9 +13,12 @@
 #import "DCPlayerControlModel.h"
 
 @interface AutoVideoViewModel : NSObject
-@property (nonatomic, copy) NSString *URL;
+@property (nonatomic, copy) NSURL *URL;
 @property (nonatomic, copy) NSArray<AutoVideoCellModel *> *materialList;
 @property (nonatomic, strong) DCFireViewModel *fireModel;
 @property (nonatomic, strong) DCTimeModel *timeModel;
 @property (nonatomic, strong) DCPlayerControlModel *controlModel;
+
+- (void)goForward;
+- (void)goBack;
 @end

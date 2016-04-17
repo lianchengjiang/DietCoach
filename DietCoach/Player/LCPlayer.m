@@ -42,7 +42,7 @@
     if ([_playURL isEqual:playURL]) {
         return;
     }
-    
+    [self pause];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
     
     _playURL = playURL;
@@ -52,7 +52,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(playerItemDidReachEnd:) name:AVPlayerItemDidPlayToEndTimeNotification object:[self.player currentItem]];
 
-
+    [self play];
 }
 
 - (void)setPlayer:(AVPlayer *)player

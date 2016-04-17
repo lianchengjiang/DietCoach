@@ -10,6 +10,15 @@
 
 @implementation DCFireViewModel
 
++ (instancetype)modelWithLevel:(DCFireLevel)level;
+{
+    DCFireViewModel *model = [DCFireViewModel new];
+    model.fireLevel = level;
+    return model;
+}
+
+#pragma mark -
+
 - (NSString *)fireTitle
 {
     return [self fireTitleMap][@(self.fireLevel)];

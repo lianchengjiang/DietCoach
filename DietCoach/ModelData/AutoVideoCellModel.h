@@ -13,4 +13,6 @@
 @property (nonatomic, copy) NSString *headString;
 @property (nonatomic, copy) NSString *tailString;
 
++ (NSArray<AutoVideoCellModel *> *)modelListWithList:(NSArray<NSString *> *)list;
+
 @end

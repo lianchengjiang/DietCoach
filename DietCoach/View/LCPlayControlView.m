@@ -25,15 +25,15 @@
     if (!self) {
         return nil;
     }
-    [self initializeConfig];
     [self layoutPageSubviews];
+    [self bindViewWithModel];
     return self;
 }
 
-- (void)initializeConfig
+- (void)bindViewWithModel
 {
-    RAC(self.backButton, enabled) = RACObserve(self, controlModel.canBack);
-    RAC(self.forwardButton, enabled) = RACObserve(self, controlModel.canForward);
+    RAC(self.backButton, enabled) = RACObserve(self.controlModel, canBack);
+    RAC(self.forwardButton, enabled) = RACObserve(self.controlModel, canForward);
     [RACObserve(self, controlModel.playing) subscribeNext:^(NSNumber *playingNum) {
         if ([playingNum boolValue]) {
             [_stopButton setImage:[UIImage imageNamed:@"btn_stop"] forState:UIControlStateNormal];
@@ -100,7 +100,7 @@
     @weakify(self);
     _playSignal = [[_stopButton rac_signalForControlEvents:UIControlEventTouchUpInside] map:^id(id value) {
         @strongify(self);
-        return @(self.controlModel.playing);
+        return @(!self.controlModel.playing);
     }];
     return _stopButton;
 }
