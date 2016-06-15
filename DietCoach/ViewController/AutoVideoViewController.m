@@ -17,7 +17,7 @@
 #import "ModelTableViewDataSource.h"
 #import "DCAudioPlayer.h"
 
-@interface AutoVideoViewController ()<DCRecordTimeViewDelegate>
+@interface AutoVideoViewController ()<DCRecordTimeViewDelegate,AVAudioPlayerDelegate>
 
 @property (nonatomic, strong) LCPlayer *player;
 @property (nonatomic, strong) DCAudioPlayer *audioPlayer;
@@ -89,13 +89,17 @@
 - (void)bindViewWithModel
 {
     RAC(self.player,playURL) = RACObserve(self, model.URL);
-    RAC(self.audioPlayer,URL) = RACObserve(self, model.audioURL);
     RAC(self.fireView,model) = RACObserve(self, model.fireModel);
     RAC(self.recordView,totalTime) = RACObserve(self, model.timeModel.second);
     RAC(self.timeView,model) = RACObserve(self, model.timeModel);
     RAC(self.controlView,controlModel) = RACObserve(self, model.controlModel);
     
     @weakify(self);
+    [RACObserve(self, model.audioURL) subscribeNext:^(NSURL *x) {
+        self.audioPlayer.URL = x;
+        [self.audioPlayer play];
+    }];
+    
     [self.controlView.backSignal subscribeNext:^(id x) {
         @strongify(self);
         [self.model goBack];
@@ -109,10 +113,11 @@
     [self.controlView.playSignal subscribeNext:^(NSNumber *playing) {
         @strongify(self);
         self.model.controlModel.playing = [playing boolValue];
-        self.recordView.playing = [playing boolValue];
         if ([playing boolValue]) {
+            [self.recordView startRecord];
             [self.player play];
         } else {
+            [self.recordView stopRecord];
             [self.player pause];
         }
     }];
@@ -124,6 +129,17 @@
 - (void)recordCompletedInTimeView:(DCRecordTimeView *)view
 {
     [self.model goForward];
+}
+
+#pragma mark - AVAudioPlayerDelegate
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag;
+{
+    [self.recordView startRecord];
+}
+
+- (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError * __nullable)error;
+{
+    
 }
 
 #pragma mark - getter
@@ -141,6 +157,7 @@
 {
     if (!_audioPlayer) {
         _audioPlayer = [DCAudioPlayer new];
+        _audioPlayer.delegate = self;
     }
     return _audioPlayer;
 }
@@ -204,6 +221,7 @@
     if (!_model) {
         _model = [AutoVideoViewModel new];
     }
+    
     return _model;
 }
 

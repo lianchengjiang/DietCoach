@@ -11,11 +11,13 @@
 #import "Masonry.h"
 #import "LCFoundation.h"
 #import "ReactiveCocoa.h"
+#import "DCAudioPlayer.h"
 
-@interface DCRecordTimeView()
+@interface DCRecordTimeView()<AVAudioPlayerDelegate>
 
 @property (nonatomic, assign) NSUInteger remainTime;
 @property (nonatomic, strong) UILabel *timeLabel;
+@property (nonatomic, strong) DCAudioPlayer *player;
 
 @property (nonatomic, strong) NSTimer *timer;
 
@@ -76,24 +78,35 @@
     CGContextDrawPath(content, kCGPathStroke);
 }
 
+#pragma mark - AVAudioPlayerDelegate
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag;
+{
+//    [self.player play];
+}
+
 #pragma mark - timer
 - (void)startTimer
 {
     if ([self.timer isValid] || self.remainTime <= 0) {
         return;
     }
+    _recording = YES;
+    [self.player play];
     self.timer = [NSTimer safe_scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerAction) userInfo:nil repeats:YES disableIfBackground:YES];
 }
 
 - (void)stopTimer
 {
     [self.timer invalidate];
+    _recording = NO;
+    [self.player stop];
     self.timer = nil;
 }
 
 - (void)timerAction
 {
     self.remainTime --;
+    [self.player play];
     if (self.remainTime > 0) {
         return;
     }
@@ -108,18 +121,19 @@
     [self stopTimer];
     _totalTime = totalTime;
     self.remainTime = totalTime;
+}
+
+
+
+#pragma mark - public
+- (void)startRecord;
+{
     [self startTimer];
 }
 
-- (void)setPlaying:(BOOL)playing
+- (void)stopRecord;
 {
-    _playing = playing;
-    if (playing) {
-        [self startTimer];
-    } else
-    {
-        [self startTimer];
-    }
+    [self stopTimer];
 }
 
 #pragma mark - private
@@ -147,6 +161,17 @@
     }
     _timeLabel = [UILabel lc_labelWithFontSize:20 textColorHexValue:0x030303];
     return _timeLabel;
+}
+
+- (DCAudioPlayer *)player
+{
+    if (_player) {
+        return _player;
+    }
+    _player = [DCAudioPlayer new];
+    _player.URL = [[NSBundle mainBundle] URLForResource:@"dida" withExtension:@"mp3"];
+    _player.delegate = self;
+    return _player;
 }
 
 @end

@@ -20,8 +20,10 @@
 - (void)setURL:(NSURL *)URL
 {
     _URL = URL;
+    [self.player stop];
     self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:URL error:nil];
-    [self.player play];
+    [self.player prepareToPlay];
+    self.player.delegate = self.delegate;
 }
 
 - (void)setDelegate:(id<AVAudioPlayerDelegate>)delegate
@@ -31,5 +33,29 @@
 }
 
 
+- (void)play;
+{
+    if ([NSThread isMainThread]) {
+        [self.player play];
+        return;
+    }
+    
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        [self.player play];
+    });
+}
+
+- (void)stop;
+{
+    if ([NSThread isMainThread]) {
+        [self.player stop];
+        return;
+    }
+    
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        [self.player stop];
+    });
+
+}
 
 @end

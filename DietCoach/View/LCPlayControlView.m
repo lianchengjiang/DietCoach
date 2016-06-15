@@ -38,7 +38,7 @@
         if ([playingNum boolValue]) {
             [_stopButton setImage:[UIImage imageNamed:@"btn_stop"] forState:UIControlStateNormal];
         } else {
-            
+            [_stopButton setImage:[UIImage imageNamed:@"btn_play"] forState:UIControlStateNormal];
         }
     }];
 }

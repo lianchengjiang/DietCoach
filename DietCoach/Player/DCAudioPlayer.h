@@ -13,4 +13,6 @@
 @property (nonatomic, weak) id<AVAudioPlayerDelegate> delegate;
 @property (nonatomic, strong) NSURL *URL;
 
+- (void)play;
+- (void)stop;
 @end

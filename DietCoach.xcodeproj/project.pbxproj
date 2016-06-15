@@ -21,6 +21,7 @@
 		752813381CC3E1CC00BB8026 /* audio4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 752813321CC3E1CC00BB8026 /* audio4.wav */; };
 		752813391CC3E1CC00BB8026 /* audio5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 752813331CC3E1CC00BB8026 /* audio5.wav */; };
 		7528133A1CC3E1CC00BB8026 /* audio6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 752813341CC3E1CC00BB8026 /* audio6.wav */; };
+		753B4B941CCC4B7D00F78AB6 /* dida.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 753B4B931CCC4B7D00F78AB6 /* dida.mp3 */; };
 		7541F0D81CC3783300197DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7541F0D71CC3783300197DA3 /* Assets.xcassets */; };
 		755B01361CBFEA4D003838D9 /* AutoVideoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 755B01351CBFEA4D003838D9 /* AutoVideoViewModel.m */; };
 		755B01391CBFECF4003838D9 /* DCFireViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 755B01381CBFECF4003838D9 /* DCFireViewModel.m */; };
@@ -86,6 +87,7 @@
 		752813321CC3E1CC00BB8026 /* audio4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = audio4.wav; sourceTree = "<group>"; };
 		752813331CC3E1CC00BB8026 /* audio5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = audio5.wav; sourceTree = "<group>"; };
 		752813341CC3E1CC00BB8026 /* audio6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = audio6.wav; sourceTree = "<group>"; };
+		753B4B931CCC4B7D00F78AB6 /* dida.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dida.mp3; sourceTree = "<group>"; };
 		7541F0D71CC3783300197DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		755B01341CBFEA4D003838D9 /* AutoVideoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoVideoViewModel.h; sourceTree = "<group>"; };
 		755B01351CBFEA4D003838D9 /* AutoVideoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoVideoViewModel.m; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				752813321CC3E1CC00BB8026 /* audio4.wav */,
 				752813331CC3E1CC00BB8026 /* audio5.wav */,
 				752813341CC3E1CC00BB8026 /* audio6.wav */,
+				753B4B931CCC4B7D00F78AB6 /* dida.mp3 */,
 				75CCF7891CBA136700A8F349 /* cook1.mov */,
 				75CCF78A1CBA136700A8F349 /* cook2.mov */,
 				75CCF78B1CBA136700A8F349 /* cook3.mov */,
@@ -455,6 +458,7 @@
 				75CCF7BC1CBA163000A8F349 /* HomeTableViewCell.xib in Resources */,
 				75CCF7961CBA136700A8F349 /* cook6.mov in Resources */,
 				7528133A1CC3E1CC00BB8026 /* audio6.wav in Resources */,
+				753B4B941CCC4B7D00F78AB6 /* dida.mp3 in Resources */,
 				752813371CC3E1CC00BB8026 /* audio3.wav in Resources */,
 				75903BF71CB415BE0070330D /* Main.storyboard in Resources */,
 				75CCF7931CBA136700A8F349 /* cook3.mov in Resources */,

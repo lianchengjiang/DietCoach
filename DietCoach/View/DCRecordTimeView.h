@@ -18,7 +18,10 @@
 @interface DCRecordTimeView : UIView
 
 @property (nonatomic, assign) NSUInteger totalTime;
-@property (nonatomic, assign) BOOL playing;
+@property (nonatomic, assign, readonly) BOOL recording;
 @property (nonatomic, weak) id<DCRecordTimeViewDelegate> delegate;
+
+- (void)startRecord;
+- (void)stopRecord;
 
 @end
